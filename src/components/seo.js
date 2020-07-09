@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ title, description }) => {
+const SEO = ({ pageTitle, title, description }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
 
@@ -42,6 +42,7 @@ const SEO = ({ title, description }) => {
       {seo.description && (
         <meta name="twitter:description" content={seo.description} />
       )}
+      <title>{pageTitle}</title>
     </Helmet>
   );
 };
