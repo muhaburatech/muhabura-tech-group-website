@@ -24,7 +24,7 @@ const SEO = ({ pageTitle, title, description }) => {
   return (
     <Helmet title={seo.title}>
       <meta name="description" content={seo.description} />
-
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
       {seo.url && <meta property="og:url" content={seo.url} />}
 
       {seo.title && <meta property="og:title" content={seo.title} />}

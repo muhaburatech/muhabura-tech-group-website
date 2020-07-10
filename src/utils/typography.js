@@ -1,7 +1,7 @@
-import Typography from "typography"
-import fairyGateTheme from "typography-theme-fairy-gates"
+import Typography from "typography";
+import lincolnTheme from "typography-theme-lincoln";
 
-const typography = new Typography(fairyGateTheme)
+const typography = new Typography(lincolnTheme);
 
-export const { scale, rythm, options } = typography
-export default typography
+export const { scale, rythm, options } = typography;
+export default typography;

@@ -13,6 +13,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-postcss`,
+    `gatsby-theme-tailwindcss`,
   ],
 };
