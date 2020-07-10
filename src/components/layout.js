@@ -6,10 +6,10 @@ import Header from "./header";
 const Layout = ({ pageTitle, children }) => {
   return (
     <>
-      <SEO />
+      <SEO pageTitle={pageTitle} />
       <Header />
       <GlobalStyles />
-      {children}
+      <main className="mx-auto">{children}</main>
     </>
   );
 };

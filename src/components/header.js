@@ -1,111 +1,83 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 
 const Header = () => {
-  const [navBackground, setNavBackground] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
-
-  const navRef = useRef();
-  navRef.current = navBackground;
-  useEffect(() => {
-    const handleScroll = () => {
-      const show = window.scrollY > 670;
-      if (navRef.current !== show) {
-        setNavBackground(show);
-      }
-    };
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const [openNav, setOpenNav] = useState(false);
+  const handleOpenNav = () => {
+    return setOpenNav(!openNav);
+  };
   return (
-    <header
-      className={`${navBackground ? `bg-purple-900` : ``} shadow-md py-1`}
-    >
-      <div className="py-2 px-2 lg:mx-4 xl:mx-12">
-        <div className="">
-          <nav
-            className="flex items-center justify-between flex-wrap  "
-            style={{ transition: "1s ease" }}
-          >
-            <div className="flex items-center w-12 h-12 flex-no-shrink text-white mr-6 ">
-              <img
-                className="mb-0"
-                src="/logo.png"
-                alt="muhabura tech group logo"
-              />
-              <Link
-                to="/"
-                className="block py-2 lg:inline-block text-md font-bold text-black  sm:hover:text-purple-700  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
-              >
-                MUHABURA<span className="text-purple-600">TECH</span>GROUP
-              </Link>
-            </div>
-            <div className="block lg:hidden">
-              <button
-                onClick={() => setOpenModal(!openModal)}
-                className="navbar-burger flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
-              >
-                <svg
-                  className="fill-current h-6 w-6 text-gray-700"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                </svg>
-              </button>
-            </div>
-            <div
-              id="main-nav"
-              className={`w-full flex-grow lg:flex items-center lg:w-auto ${
-                openModal ? "" : "hidden"
-              }`}
+    <nav className="bg-white shadow mb-2">
+      <div className="md:flex items-center justify-between py-2 px-8 md:px-12">
+        <div className="flex justify-between items-center">
+          <div className="sm:text-3xl mt-1 font-bold text-gray-800 md:text-3xl">
+            <Link to="/">
+              MUHABURA<span className="text-indigo-600">-TECH</span>-GROUP
+            </Link>
+          </div>
+          <div className="md:hidden">
+            <button
+              type="button"
+              onClick={handleOpenNav}
+              className="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none"
             >
-              <div className="text-sm lg:flex justify-center lg:justify-end lg:flex-grow mt-2 animated jackinthebox xl:mx-8">
-                <Link
-                  to="/"
-                  className="block py-2 lg:inline-block text-md font-bold  text-purple-700  sm:hover:text-purple-700  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
-                >
-                  HOME
-                </Link>
-                <Link
-                  to="/services"
-                  className="block py-2 lg:inline-block text-md font-bold  text-gray-900  sm:hover:text-purple-700  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
-                >
-                  SERVICES
-                </Link>
-                <Link
-                  to="/portfolio"
-                  className="block py-2 lg:inline-block text-md font-bold  text-gray-900  sm:hover:text-purple-700  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
-                >
-                  PORTFOLIO
-                </Link>
-                <Link
-                  to="/team"
-                  className="block py-2 lg:inline-block text-md font-bold  text-gray-900  sm:hover:text-purple-700  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
-                >
-                  OUR TEAM
-                </Link>
-                <Link
-                  to="/about"
-                  className="block py-2 lg:inline-block text-md font-bold  text-gray-900  sm:hover:text-purple-700  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
-                >
-                  ABOUT US
-                </Link>
-                <Link
-                  to="/contact"
-                  className="block py-2 lg:inline-block text-md font-bold  text-gray-900  sm:hover:text-purple-700  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg"
-                >
-                  CONTACT US
-                </Link>
-              </div>
-            </div>
-          </nav>
+              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  className={` ${!openNav && `hidden`}`}
+                  d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
+                />
+                <path
+                  className={` ${openNav && `hidden`}`}
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          className={`flex items-center mt-6 md:mt-0 flex-col md:flex-row md:block -mx-2 ${
+            !openNav && `hidden`
+          }`}
+        >
+          <Link
+            to="/"
+            className="bg-gray-900 text-gray-100  rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+          >
+            Home
+          </Link>
+          <Link
+            to="/services"
+            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+          >
+            Services
+          </Link>
+          <Link
+            to="/portfolio"
+            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+          >
+            Portfolio
+          </Link>
+          <Link
+            to="/team"
+            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+          >
+            Our team
+          </Link>
+          <Link
+            to="/about"
+            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+          >
+            Contact
+          </Link>
         </div>
       </div>
-    </header>
+    </nav>
   );
 };
 
