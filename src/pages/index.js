@@ -1,11 +1,18 @@
 import React from "react";
+
 import Layout from "../components/layout";
-import { Link } from "gatsby";
+import services from "../data/services";
+import ServiceCard from "../components/serviceCard";
+import SectionContainer from "../components/sectionContainer";
+import { PrimaryButton, SecondaryButton } from "../components/buttons";
 
 export default function Home() {
   return (
     <Layout>
       <Hero />
+      <Service />
+      <About />
+      <ProcessSection />
     </Layout>
   );
 }
@@ -19,22 +26,12 @@ function Hero() {
             Build Your Company’s
             <span className="text-indigo-600"> Future</span>
           </h2>
-          <p className="mt-8 text-sm text-gray-700 md:text-2xl">
+          <p className="mt-8 font-light text-sm text-gray-600 md:text-2xl">
             Develop custom software that will move your business forward.
           </p>
           <div className="flex justify-center lg:justify-start mt-12">
-            <Link
-              className="px-4 py-3 bg-gray-900 text-gray-200 text-md font-medium  rounded hover:bg-gray-800"
-              to="/contact"
-            >
-              Get Started
-            </Link>
-            <Link
-              className="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-md font-medium  rounded hover:bg-gray-400"
-              to="/about"
-            >
-              Learn More
-            </Link>
+            <PrimaryButton text="Get in touch" to="/contact" />
+            <SecondaryButton text="Learn more" to="/about" />
           </div>
         </div>
       </div>
@@ -56,6 +53,101 @@ function Hero() {
   );
 }
 
-// function Service() {
+function Service() {
+  return (
+    <SectionContainer title="Services">
+      <div className="flex flex-row flex-wrap justify-center items-center">
+        {services.map(service => {
+          return <ServiceCard key={service.id} service={service} />;
+        })}
+      </div>
+      <PrimaryButton text="View all services" to="/services" />
+    </SectionContainer>
+  );
+}
 
-// }
+function About() {
+  return (
+    <SectionContainer title="About">
+      <div className="max-w-xl text-gray-600 text-center leading-8 text-lg">
+        <p className="px-4">
+          Grow your business online is the driving force behind Muhabura Tech
+          Group. We’re passionate, hard-working, and most of all, we love
+          helping our clients do great things on the web.
+        </p>
+      </div>
+      <div className="mt-6">
+        <PrimaryButton text="Learn more" to="/about" />
+      </div>
+    </SectionContainer>
+  );
+}
+
+function ProcessSection() {
+  return (
+    <SectionContainer title="Our Process">
+      <p className="text-center max-w-3xl pb-5">
+        The digital world is changing fast, and your business should be ready to
+        embrace what's next. Ready to work together on a great website that gets
+        results?
+      </p>
+      <div className="flex flex-row flex-wrap items-center justify-center">
+        <div className="max-w-md py-4 px-8 bg-white shadow-md rounded-lg mb-3 my-20 m-2 md:m-10 hover:shadow-xl">
+          <div className="flex justify-center -mt-16">
+            <img
+              className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+              src="https://img.icons8.com/bubbles/100/000000/phone.png"
+              alt="service icon"
+            />
+          </div>
+          <div className="flex flex-col flex-no-wrap items-center">
+            <h2 className="text-gray-800 text-2xl md:text-3xl font-semibold">
+              Schedule a call
+            </h2>
+            <p className="mt-2 text-center text-gray-600 text-lg md:text-xl leading-relaxed">
+              We’re here to help you grow your business. Talk to us to see how
+              we can help.
+            </p>
+          </div>
+        </div>
+        <div className="max-w-md py-4 px-8 bg-white shadow-md rounded-lg mb-3 my-20 m-2 md:m-10 hover:shadow-xl">
+          <div className="flex justify-center -mt-16">
+            <img
+              className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+              src="https://img.icons8.com/bubbles/100/000000/planner.png"
+              alt="service icon"
+            />
+          </div>
+          <div className="flex flex-col flex-no-wrap items-center">
+            <h2 className="text-gray-800 text-2xl md:text-3xl font-semibold">
+              Plan it
+            </h2>
+            <p className="mt-2 text-center text-gray-600 text-lg md:text-xl leading-relaxed">
+              We’ll outline your goals together and create a plan to help you
+              get the most of your website.
+            </p>
+          </div>
+        </div>
+        <div className="max-w-md py-4 px-8 bg-white shadow-md rounded-lg mb-3 my-20 m-2 md:m-10 hover:shadow-xl">
+          <div className="flex justify-center -mt-16">
+            <img
+              className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+              src="https://img.icons8.com/bubbles/100/000000/phone.png"
+              alt="service icon"
+            />
+          </div>
+          <div className="flex flex-col flex-no-wrap items-center">
+            <h2 className="text-gray-800 text-2xl md:text-3xl font-semibold">
+              Grow online
+            </h2>
+            <p className="mt-2 text-center text-gray-600 text-lg md:text-xl leading-relaxed">
+              We’ll execute on our strategy and continue to refine and evolve to
+              get more ROI from your website.
+            </p>
+          </div>
+        </div>
+      </div>
+      <PrimaryButton to="/contact" text="Schedule a call today" />
+    </SectionContainer>
+  );
+}

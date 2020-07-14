@@ -13,6 +13,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-theme-tailwindcss`,
+    {
+      resolve: `gatsby-theme-tailwindcss`,
+      options: {
+        postCssPlugins: [require("autoprefixer")],
+      },
+    },
   ],
 };

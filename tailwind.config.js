@@ -15,8 +15,11 @@ module.exports = {
         "96": "46rem",
         "128": "60rem",
       },
+      width: {
+        "72": "40rem",
+      },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/ui")],
 };

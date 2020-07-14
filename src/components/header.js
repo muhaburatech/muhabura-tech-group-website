@@ -3,81 +3,165 @@ import { Link } from "gatsby";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
+
   const handleOpenNav = () => {
     return setOpenNav(!openNav);
   };
+
   return (
-    <nav className="bg-white shadow mb-2">
-      <div className="md:flex items-center justify-between py-2 px-8 md:px-12">
-        <div className="flex justify-between items-center">
-          <div className="sm:text-3xl mt-1 font-bold text-gray-800 md:text-3xl">
-            <Link to="/">
-              MUHABURA<span className="text-indigo-600">-TECH</span>-GROUP
+    <div className="relative bg-white">
+      <div className="max-w-7xl mx-auto sm:px-6">
+        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+          <div className="lg:w-0 lg:flex-1">
+            <Link to="/" className="flex">
+              <img
+                className="h-14 mb-0 w-auto sm:h-10 px-4"
+                src="/logo.png"
+                alt="Logo"
+              />
             </Link>
           </div>
-          <div className="md:hidden">
+          <div className={`${!openNav && "hidden"} -mr-2 -my-2 md:hidden px-5`}>
             <button
               type="button"
               onClick={handleOpenNav}
-              className="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
             >
-              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
                 <path
-                  className={` ${!openNav && `hidden`}`}
-                  d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
-                />
-                <path
-                  className={` ${openNav && `hidden`}`}
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
             </button>
           </div>
-        </div>
-        <div
-          className={`flex items-center mt-6 md:mt-0 flex-col md:flex-row md:block -mx-2 ${
-            !openNav && `hidden`
-          }`}
-        >
-          <Link
-            to="/"
-            className="bg-gray-900 text-gray-100  rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-          >
-            Home
-          </Link>
-          <Link
-            to="/services"
-            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-          >
-            Services
-          </Link>
-          <Link
-            to="/portfolio"
-            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-          >
-            Portfolio
-          </Link>
-          <Link
-            to="/team"
-            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-          >
-            Our team
-          </Link>
-          <Link
-            to="/about"
-            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-          >
-            About
-          </Link>
-          <Link
-            to="/contact"
-            className="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-          >
-            Contact
-          </Link>
+          <nav className="hidden md:flex space-x-10">
+            <div className="relative">
+              <Link
+                to="/services"
+                className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              >
+                Home
+              </Link>
+            </div>
+            <Link
+              to="/services"
+              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            >
+              Services
+            </Link>
+            <Link
+              to="/portfolio"
+              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            >
+              Portfolio
+            </Link>
+
+            <Link
+              to="/team"
+              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            >
+              Team
+            </Link>
+            <Link
+              to="/team"
+              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            >
+              About
+            </Link>
+            <Link
+              to="/team"
+              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+            >
+              Contact
+            </Link>
+          </nav>
         </div>
       </div>
-    </nav>
+      <div
+        className={`${
+          openNav && "hidden"
+        } absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden`}
+      >
+        <div className="rounded-lg shadow-lg">
+          <div className="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
+            <div className="pt-5 pb-6 px-5 space-y-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <img
+                    className="h-14 mb-0 w-auto"
+                    src="/logo.png"
+                    alt="Logo"
+                  />
+                </div>
+                <div className="-mr-2">
+                  <button
+                    type="button"
+                    onClick={handleOpenNav}
+                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                  >
+                    <svg
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="py-6 px-5 space-y-6">
+              <div className="grid grid-cols-2 row-gap-4 col-gap-8">
+                <Link
+                  to="/"
+                  className="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                >
+                  Services
+                </Link>
+                <Link
+                  to="/portfolio"
+                  className="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                >
+                  Portfolio
+                </Link>
+                <Link
+                  to="/team"
+                  className="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                >
+                  Team
+                </Link>
+                <Link
+                  to="/about"
+                  className="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                >
+                  About
+                </Link>
+                <Link
+                  to="/contact"
+                  className="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                >
+                  Contact
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
