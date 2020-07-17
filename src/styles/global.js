@@ -10,7 +10,11 @@ export default createGlobalStyle`
   body {
     margin: 0;
   }
-
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   article,
   aside,
   details,

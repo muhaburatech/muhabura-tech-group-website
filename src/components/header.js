@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
-const Header = () => {
+const Header = ({ page }) => {
   const [openNav, setOpenNav] = useState(false);
 
   const handleOpenNav = () => {
@@ -21,7 +21,7 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className={`${!openNav && "hidden"} -mr-2 -my-2 md:hidden px-5`}>
+          <div className={`${openNav && "hidden"} -mr-2 -my-2 md:hidden px-5`}>
             <button
               type="button"
               onClick={handleOpenNav}
@@ -45,40 +45,52 @@ const Header = () => {
           <nav className="hidden md:flex space-x-10">
             <div className="relative">
               <Link
-                to="/services"
-                className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+                to="/"
+                className={`${
+                  page === undefined ? "text-indigo-500" : ""
+                } text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
               >
                 Home
               </Link>
             </div>
             <Link
               to="/services"
-              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className={`${
+                page === "services" ? "text-indigo-500" : ""
+              } text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
             >
               Services
             </Link>
             <Link
               to="/portfolio"
-              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className={`${
+                page === "portfolio" ? "text-indigo-500" : ""
+              } text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
             >
               Portfolio
             </Link>
 
             <Link
               to="/team"
-              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              className={`${
+                page === "team" ? "text-indigo-500" : ""
+              } text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
             >
               Team
             </Link>
             <Link
-              to="/team"
-              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              to="/about"
+              className={`${
+                page === "about" ? "text-indigo-500" : ""
+              } text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
             >
               About
             </Link>
             <Link
-              to="/team"
-              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
+              to="/contact"
+              className={`${
+                page === "contact" ? "text-indigo-500" : ""
+              } text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150`}
             >
               Contact
             </Link>
@@ -87,7 +99,7 @@ const Header = () => {
       </div>
       <div
         className={`${
-          openNav && "hidden"
+          !openNav && "hidden"
         } absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden`}
       >
         <div className="rounded-lg shadow-lg">

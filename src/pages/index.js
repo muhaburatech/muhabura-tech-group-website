@@ -55,7 +55,14 @@ function Hero() {
 
 function Service() {
   return (
-    <SectionContainer title="Services">
+    <SectionContainer title="Services" mode="light">
+      <p className=" max-w-xl pb-5 leading-loose">
+        We are a diverse team with backgrounds in web design, web development,
+        digital marketing, and more. We apply our digital knowledge to your
+        business’s goals and budget to create a scope of work that will help you
+        grow your business. Whether you’re looking to start a website from
+        scratch or want to market your existing website (or both!), we can help.
+      </p>
       <div className="flex flex-row flex-wrap justify-center items-center">
         {services.map(service => {
           return <ServiceCard key={service.id} service={service} />;
@@ -69,7 +76,7 @@ function Service() {
 function About() {
   return (
     <SectionContainer title="About">
-      <div className="max-w-xl text-gray-600 text-center leading-8 text-lg">
+      <div className="max-w-xl text-gray-600 leading-8 text-lg">
         <p className="px-4">
           Grow your business online is the driving force behind Muhabura Tech
           Group. We’re passionate, hard-working, and most of all, we love
@@ -85,8 +92,8 @@ function About() {
 
 function ProcessSection() {
   return (
-    <SectionContainer title="Our Process">
-      <p className="text-center max-w-3xl pb-5">
+    <SectionContainer title="Our Process" mode="light">
+      <p className=" max-w-xl pb-5 leading-loose">
         The digital world is changing fast, and your business should be ready to
         embrace what's next. Ready to work together on a great website that gets
         results?
@@ -132,7 +139,7 @@ function ProcessSection() {
           <div className="flex justify-center -mt-16">
             <img
               className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-              src="https://img.icons8.com/bubbles/100/000000/phone.png"
+              src="https://img.icons8.com/bubbles/100/000000/positive-dynamic.png"
               alt="service icon"
             />
           </div>
