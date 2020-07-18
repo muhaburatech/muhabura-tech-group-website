@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Layout page="about">
       <Intro
-        imageUrl="https://images.unsplash.com/photo-1569020478562-0236bf23bb9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1981&q=80"
+        imageUrl="/intro/about.jpeg"
         heading="Who we are, What we are"
         description="Develop custom software that will move your business forward."
       />

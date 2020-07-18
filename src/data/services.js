@@ -38,6 +38,30 @@ export default [
   },
   {
     id: 6,
+    name: "Graphics design & printing",
+    iconPath: "https://img.icons8.com/clouds/100/000000/design.png",
+    link: "/services/graphics-design",
+    description:
+      "We create visual content to communicate messages and follow through to printing",
+  },
+  {
+    id: 7,
+    name: "Wedding photography",
+    iconPath: "https://img.icons8.com/bubbles/100/000000/panorama.png",
+    link: "/services/sass",
+    description:
+      "Primarily focused on the photography of events and activities relating to weddings.",
+  },
+  {
+    id: 8,
+    name: "Wedding videography",
+    iconPath: "https://img.icons8.com/clouds/100/000000/camcorder-pro.png",
+    link: "/services/videography",
+    description:
+      "Primarily focused on the videography of events and activities relating to weddings.",
+  },
+  {
+    id: 9,
     name: "Software as a Service",
     iconPath: "https://img.icons8.com/clouds/100/000000/code.png",
     link: "/services/sass",

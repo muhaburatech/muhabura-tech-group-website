@@ -42,8 +42,7 @@ function Hero() {
         <div
           className="h-full object-cover"
           style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80)",
+            backgroundImage: "url('/intro/home.jpeg')",
           }}
         >
           <div className="h-full bg-black opacity-25"></div>
@@ -65,7 +64,9 @@ function Service() {
       </p>
       <div className="flex flex-row flex-wrap justify-center items-center">
         {services.map(service => {
-          return <ServiceCard key={service.id} service={service} />;
+          if (service.id <= 6)
+            return <ServiceCard key={service.id} service={service} />;
+          return null;
         })}
       </div>
       <PrimaryButton text="View all services" to="/services" />
