@@ -4,7 +4,7 @@ import { PrimaryButton } from "../components/buttons";
 const ContactForm = () => {
   return (
     <form
-      id="contact-me"
+      name="contact"
       className="w-full mx-auto max-w-3xl bg-white shadow p-8 text-gray-700"
       data-netlify="true"
     >
