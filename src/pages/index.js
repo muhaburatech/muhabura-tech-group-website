@@ -55,7 +55,7 @@ function Hero() {
 function Service() {
   return (
     <SectionContainer title="Services" mode="light">
-      <p className=" max-w-xl pb-5 leading-loose">
+      <p className=" max-w-xl pb-5 leading-loose px-3">
         We are a diverse team with backgrounds in web design, web development,
         digital marketing, and more. We apply our digital knowledge to your
         business’s goals and budget to create a scope of work that will help you
@@ -94,7 +94,7 @@ function About() {
 function ProcessSection() {
   return (
     <SectionContainer title="Our Process" mode="light">
-      <p className=" max-w-xl pb-5 leading-loose">
+      <p className=" max-w-xl pb-5 leading-loose px-2">
         The digital world is changing fast, and your business should be ready to
         embrace what's next. Ready to work together on a great website that gets
         results?

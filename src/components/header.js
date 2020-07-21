@@ -139,7 +139,7 @@ const Header = ({ page }) => {
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 row-gap-4 col-gap-8">
                 <Link
-                  to="/"
+                  to="/services"
                   className="text-base leading-6 font-medium text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
                 >
                   Services
