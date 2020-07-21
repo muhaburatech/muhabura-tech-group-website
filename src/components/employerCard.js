@@ -1,12 +1,10 @@
 import React from "react";
-import { SecondaryButton } from "../components/buttons";
 
 const EmployeeCard = ({
   name = "",
   position = "",
   description = "",
   image = "",
-  cvLink = "",
 }) => {
   return (
     <div className="max-w-md py-4 px-8 bg-white shadow-md rounded-lg mb-3 my-20 m-2 md:m-10 hover:shadow-xl">
@@ -25,10 +23,6 @@ const EmployeeCard = ({
         <p className="mt-2 text-center text-gray-600 text-lg md:text-xl leading-relaxed">
           {description}
         </p>
-
-        <div className="mt-10 mb-3">
-          <SecondaryButton text="View CV" to={cvLink} />
-        </div>
       </div>
     </div>
   );

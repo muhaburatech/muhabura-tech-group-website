@@ -6,6 +6,7 @@ const ContactForm = () => {
     <form
       id="contact-me"
       className="w-full mx-auto max-w-3xl bg-white shadow p-8 text-gray-700 "
+      data-netlify="true"
     >
       <h2 className="w-full text-center text-3xl font-bold leading-tight my-5">
         Contact form

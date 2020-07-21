@@ -4,27 +4,23 @@ export const managementTeam = [
     name: "Nkurikiyintwali Donat",
     position: "Chairman",
     description:
-      "Lorem ipsum Lorem ipsum Lorem Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum",
-    image: "/minega.jpg",
-    cvLink: "",
+      "Donat NKURIYINTWALI holds a Master's degree in Economics from the University of Rwanda, he has the professional certificates in Insurance, Customs and Freight Forwarding. He works in Sanlam Insurance company.  He is a Board of Director's chairman of Muhabura Tech Group.",
+    image: "/team/donat.jpeg",
   },
   {
     id: "2",
     name: "Minega Shyaka Patrick",
     position: "Managing Director",
-    description:
-      "Lorem ipsum Lorem ipsum Lorem Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum",
+    description: `As Managing Director, he oversees the strategic direction of MTG and key initiatives include enhancing and expanding MTG's technology footprint and expertise, project management, and providing a plan to achieve the company vision for the future. He is a Software Engineer by profession and has a Bachelor's of Information systems degree from Makerere University `,
     image: "/minega.jpg",
-    cvLink: "",
   },
   {
     id: "3",
     name: "Jean Salvi",
     position: "Director of Technology",
     description:
-      "Lorem ipsum Lorem ipsum Lorem Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum",
-    image: "/minega.jpg",
-    cvLink: "",
+      "His set of responsibilities include overseeing the infrastructure of technical operations, managing a team of IT employees, tracking technology in order to achieve business goals, eliminating security risks, increasing user satisfaction, and maintaining operations and systems",
+    image: "/team/salvi.jpeg",
   },
 ];
 
@@ -34,35 +30,31 @@ export const technicalTeam = [
     name: "Musinda Khadhuwa",
     position: "DevOps Engineer",
     description:
-      "Lorem ipsum Lorem ipsum Lorem Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum",
+      "He collaborates with software developers, system operators and other IT staff members to manage code releases. His role is to cross and merge the barriers that exist between software development, testing and operations teams and keep existing networks in mind as they design, plan and test.",
     image: "/team/musinda.jpeg",
-    cvLink: "",
   },
   {
     id: "2",
     name: "Harerimana Carlos",
     position: "Full-stack Engineer",
     description:
-      "Lorem ipsum Lorem ipsum Lorem Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum",
-    image: "/minega.jpg",
-    cvLink: "",
+      "Hello! I'm a full stack web developer, longing to know something new especially in Tech. If knowledge builds the confidence I will always be running after it. I hold a Bachelor’s degree in Business and Information Technology from the University of Rwanda. With 1+ years in web development and web design. My stacks are PERN and PEAN. I get so much fun when I am coding!",
+    image: "/team/carlos.jpeg",
   },
   {
     id: "3",
     name: "Habineza Leon Christian",
     position: "Front-end Engineer",
     description:
-      "Lorem ipsum Lorem ipsum Lorem Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum",
+      "I'm a full-stack software developer experienced in javascript, react.js, react native and node.js. I enjoy working in a distributed team using Agile methodology. I am enthusiastic about solving all kinds of problems with technology and believe in learning new technologies. Having different backgrounds equips me with a broader way and applying technology in problem-solving.",
     image: "/team/dalvan.jpeg",
-    cvLink: "",
   },
   {
     id: "4",
     name: "Gakwaya Raymond",
     position: "Back-end Engineer",
     description:
-      "Lorem ipsum Lorem ipsum Lorem Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum Lorem ipsum Lorem ipsum Lorem Ipsum",
+      "Raymond Gakwaya, an experienced Software Engineer with verifiable success leading teams in delivering appropriate technology solutions for desktop and mobile products.  Comprehensive knowledge of platform development, enterprise architecture, agile methodologies, cloud services, and web-based applications, skilled in Javascript(Node, React, PostgreSQL, Express), GraphQL, and Python/Django.  Innovative change agent with a unique mix of high-level technology direction and deep technical expertise.",
     image: "/team/raymond.jpeg",
-    cvLink: "",
   },
 ];
