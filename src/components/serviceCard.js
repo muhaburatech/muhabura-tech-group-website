@@ -26,14 +26,14 @@ const ServiceCard = ({ service }) => {
             {longDescription}
           </p>
         ) : (
-          <div>
+          <>
             <p className="mt-2 text-center text-gray-600 text-lg leading-relaxed">
               {description}
             </p>
             <div className="mt-10 mb-3">
               <SecondaryButton text="Learn more" to={link} />
             </div>
-          </div>
+          </>
         )}
       </div>
     </div>
