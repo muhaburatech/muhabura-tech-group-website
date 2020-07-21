@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <form
       id="contact-me"
-      className="w-full mx-auto max-w-3xl bg-white shadow p-8 text-gray-700 "
+      className="w-full mx-auto max-w-3xl bg-white shadow p-8 text-gray-700"
       data-netlify="true"
     >
       <h2 className="w-full text-center text-3xl font-bold leading-tight my-5">
@@ -16,6 +16,7 @@ const ContactForm = () => {
           <input
             className="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
             id="name"
+            name="name"
             type="text"
             placeholder="Your name"
             required
@@ -26,7 +27,8 @@ const ContactForm = () => {
         <div className="relative w-full appearance-none label-floating">
           <input
             className="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-            id="name"
+            id="phone"
+            name="phone"
             type="text"
             placeholder="Your Phone"
             required
@@ -38,6 +40,7 @@ const ContactForm = () => {
           <input
             className="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
             id="name"
+            name="company"
             type="text"
             placeholder="Your Company"
             required
@@ -61,6 +64,7 @@ const ContactForm = () => {
           <textarea
             className="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
             id="message"
+            name="message"
             rows="5"
             type="text"
             placeholder="Message..."
