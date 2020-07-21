@@ -8,7 +8,7 @@ import { PrimaryButton, SecondaryButton } from "../components/buttons";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout pageTitle="Home">
       <Hero />
       <Service />
       <About />

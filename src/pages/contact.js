@@ -5,7 +5,7 @@ import Intro from "../components/intro";
 
 const Contact = () => {
   return (
-    <Layout page="contact">
+    <Layout pageTitle="Contact" page="contact">
       <Intro
         imageUrl="/intro/contact.jpg"
         heading="We have passion for web, We are problem solvers."

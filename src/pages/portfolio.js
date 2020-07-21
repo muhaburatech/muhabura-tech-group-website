@@ -6,7 +6,7 @@ import projects from "../data/projects";
 
 const Portfolio = () => {
   return (
-    <Layout page="portfolio">
+    <Layout pageTitle="Portfolio" page="portfolio">
       <Intro
         imageUrl="/intro/portfolio.jpg"
         heading="We have passion for web, We are problem solvers."

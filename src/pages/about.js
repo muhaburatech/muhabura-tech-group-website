@@ -4,7 +4,7 @@ import Intro from "../components/intro";
 
 export default function About() {
   return (
-    <Layout page="about">
+    <Layout pageTitle="About" page="about">
       <Intro
         imageUrl="/intro/about.jpeg"
         heading="Who we are, What we are"

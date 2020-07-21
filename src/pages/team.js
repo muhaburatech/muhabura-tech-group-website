@@ -6,7 +6,7 @@ import { managementTeam, technicalTeam } from "../data/team";
 
 const Team = () => {
   return (
-    <Layout page="team">
+    <Layout pageTitle="Team" page="team">
       <Intro
         imageUrl="/intro/teamPic.jpg"
         heading="We have passion for web, We are problem solvers."

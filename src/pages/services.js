@@ -7,7 +7,7 @@ import SectionContainer from "../components/sectionContainer";
 
 const Services = () => {
   return (
-    <Layout page="services">
+    <Layout pageTitle="Services" page="services">
       <Intro
         imageUrl="/intro/services.jpeg"
         heading="We have passion for web, We are problem solvers."
