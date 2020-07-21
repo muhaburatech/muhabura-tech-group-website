@@ -7,10 +7,13 @@ const ContactForm = () => {
       name="contact"
       className="w-full mx-auto max-w-3xl bg-white shadow p-8 text-gray-700"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
       <h2 className="w-full text-center text-3xl font-bold leading-tight my-5">
         Contact form
       </h2>
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="contact" />
       <div className="flex flex-wrap mb-6">
         <div className="relative w-full appearance-none label-floating">
           <input
