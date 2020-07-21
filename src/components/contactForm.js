@@ -1,5 +1,4 @@
 import React from "react";
-import { PrimaryButton } from "../components/buttons";
 
 const ContactForm = () => {
   return (
@@ -13,7 +12,7 @@ const ContactForm = () => {
         Contact form
       </h2>
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="contact" value="contact" />
       <div className="flex flex-wrap mb-6">
         <div className="relative w-full appearance-none label-floating">
           <input
@@ -76,7 +75,11 @@ const ContactForm = () => {
       </div>
 
       <div className="text-center">
-        <PrimaryButton text="send message" to="/" />
+        <input
+          type="submit"
+          value="Send message"
+          className="px-4 py-3 bg-gray-900 text-gray-200 text-md font-medium  rounded hover:bg-gray-800"
+        />
       </div>
     </form>
   );
