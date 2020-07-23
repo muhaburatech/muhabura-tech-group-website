@@ -35,6 +35,14 @@ export const technicalTeam = [
   },
   {
     id: "2",
+    name: "Didas Mbalanya",
+    position: "Back-end Engineer",
+    description:
+      "Graduate from Jomo Kenyatta University with a Bachelors Degree in Actuarial Science. Well knowledgable in PERN, Angular, Docker, Typescript, REST, and Graphql. I don't just write code, I solve problems",
+    image: "/team/didas.jpg",
+  },
+  {
+    id: "3",
     name: "Harerimana Carlos",
     position: "Full-stack Engineer",
     description:
@@ -42,7 +50,7 @@ export const technicalTeam = [
     image: "/team/carlos.jpeg",
   },
   {
-    id: "3",
+    id: "4",
     name: "Habineza Leon Christian",
     position: "Front-end Engineer",
     description:
@@ -50,7 +58,7 @@ export const technicalTeam = [
     image: "/team/dalvan.jpeg",
   },
   {
-    id: "4",
+    id: "5",
     name: "Gakwaya Raymond",
     position: "Back-end Engineer",
     description:
