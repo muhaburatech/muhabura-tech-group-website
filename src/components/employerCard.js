@@ -17,7 +17,7 @@ const EmployeeCard = ({
       </div>
       <div className="flex flex-col flex-no-wrap items-center">
         <h4 className="mt-5 text-gray-800 text-lg font-semibold">{name}</h4>
-        <h2 className="mt-5 text-gray-800 text-2xl md:text-3xl font-bold">
+        <h2 className="mt-5 text-gray-800 text-2xl md:text-3xl font-bold text-center">
           {position}
         </h2>
         <p className="mt-2 text-center text-gray-600 text-lg md:text-xl leading-relaxed">

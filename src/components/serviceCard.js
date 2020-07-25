@@ -17,7 +17,7 @@ const ServiceCard = ({ service }) => {
         />
       </div>
       <div className="flex flex-col flex-no-wrap items-center">
-        <h2 className="text-gray-800 text-2xl md:text-2xl font-semibold">
+        <h2 className="text-gray-800 text-2xl md:text-2xl text-center font-semibold">
           {name}
         </h2>
 
