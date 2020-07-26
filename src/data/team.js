@@ -17,18 +17,10 @@ export const managementTeam = [
   {
     id: "3",
     name: "Jean Salvi",
-    position: "Director of Technology",
+    position: "Head of Technology",
     description:
       "His set of responsibilities include overseeing the infrastructure of technical operations, managing a team of IT employees, tracking technology in order to achieve business goals, eliminating security risks, increasing user satisfaction, and maintaining operations and systems",
     image: "/team/salvi.jpeg",
-  },
-  {
-    id: "4",
-    name: "Musengimana Sylivine",
-    position: "Director of Finance & Administration ",
-    description:
-      "She oversees and leads annual budgeting and planning process. She administers and reviews all financial plans and budgets. Sylivine manage company's cash flow and forecasting  , she also acts as a connecting link between the senior management of the company and employees.",
-    image: "/team/silvie.jpeg",
   },
 ];
 
