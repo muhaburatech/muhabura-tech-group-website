@@ -13,12 +13,15 @@ export default function About() {
       <h1 className="mx-auto max-w-2xl mt-11">Muhabura Tech Group</h1>
       <p className="mx-auto max-w-2xl leading-loose text-gray-700">
         Muhabura Tech Group is a full-service digital agency that is dedicated
-        to growing your business online through website design and development,
-        digital marketing, and more. Our services are based around helping you
-        grow and increase revenue with real results. We’re located in Rwanda
-        Kigali, Rubangura building (Room No 212). We’re a full team and each of
+        to growing your business online through website development, software
+        development, digital marketing, and we offer computer skills training
+        and internship. Our services are based around helping you grow and
+        increase revenue with real results. We’re located in Rwanda Kigali,
+        Rubangura House, second floor, 212 room. We’re a full team and each of
         us specializes in various areas of the web, ranging from server
-        maintenance to web design, development, and digital marketing.
+        maintenance to web development, software development, digital marketing
+        and we have experienced trainers that will help you kick start your
+        career as a software developer.
       </p>
       <h1 className="mx-auto max-w-2xl mt-11">Client first focus</h1>
       <p className="mx-auto max-w-2xl leading-loose text-gray-700">

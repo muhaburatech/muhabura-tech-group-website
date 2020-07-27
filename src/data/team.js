@@ -14,17 +14,17 @@ export const managementTeam = [
     description: `As Managing Director, he oversees the strategic direction of MTG and key initiatives include enhancing and expanding MTG's technology footprint and expertise, project management, and providing a plan to achieve the company vision for the future. He is a Software Engineer by profession and has a Bachelor's of Information systems degree from Makerere University `,
     image: "/minega.jpg",
   },
+];
+
+export const technicalTeam = [
   {
     id: "3",
     name: "Jean Salvi",
-    position: "Head of Technology",
+    position: "Full stack Engineer & Data scientist",
     description:
       "His set of responsibilities include overseeing the infrastructure of technical operations, managing a team of IT employees, tracking technology in order to achieve business goals, eliminating security risks, increasing user satisfaction, and maintaining operations and systems",
     image: "/team/salvi.jpeg",
   },
-];
-
-export const technicalTeam = [
   {
     id: "1",
     name: "Musinda Khadhuwa",
