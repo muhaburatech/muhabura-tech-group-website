@@ -7,7 +7,7 @@ const EmployeeCard = ({
   image = "",
 }) => {
   return (
-    <div className="max-w-md py-4 px-8 bg-white shadow-md rounded-lg mb-3 my-20 m-2 md:m-10 hover:shadow-xl">
+    <div className=" h-80 max-w-md py-4 px-8 bg-white shadow-md rounded-lg mb-3 my-20 m-2 md:m-10 hover:shadow-xl">
       <div className="flex justify-center -mt-16">
         <img
           className="w-32 h-32 object-cover rounded-full border-2 border-indigo-500"

@@ -4,21 +4,36 @@ export default [
     name: "Website development",
     iconPath: "https://img.icons8.com/clouds/100/000000/web-equlizer.png",
     link: "/services",
-    description: "We create responsive, user-friendly, and optimized websites",
+    description:
+      "Your online presence is one of your company’s most important assets, and good web design is a must. Your website is the online representation of your business, and it’s crucial to make a good first impression. Just having a website isn’t enough. You need a site that’s aesthetically appealing, easy to navigate and consistently generates leads for your business.",
     longDescription:
-      "refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development. ",
+      "Your online presence is one of your company’s most important assets, and good web design is a must. Your website is the online representation of your business, and it’s crucial to make a good first impression. Just having a website isn’t enough. You need a site that’s aesthetically appealing, easy to navigate and consistently generates leads for your business.",
   },
   {
     id: 2,
     name: "Software Application",
     iconPath: "https://img.icons8.com/clouds/100/000000/web-settings.png",
     link: "/services",
-    description: "Create a web-based or desktop tool for your amazing idea",
-    longDescription:
-      "We take on the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components",
+    description: `
+    Software development brings your business to new heights of integration. It allows your company to be accessible from almost anywhere via smartphone or computer.
+It increases customers’ engagement. As with any other business, you probably want to have loyal customers. Increase customers’ engagement through the website and application and make them always come back to you, not to your competitor.`,
+    longDescription: `
+    Software development brings your business to new heights of integration. It allows your company to be accessible from almost anywhere via smartphone or computer.
+It increases customers’ engagement. As with any other business, you probably want to have loyal customers. Increase customers’ engagement through the website and application and make them always come back to you, not to your competitor.`,
   },
+
   {
     id: 3,
+    name: "Computer skills training & internship",
+    iconPath: "https://img.icons8.com/bubbles/100/000000/training.png",
+    link: "/services",
+    description:
+      "We provide prerequisite software engineering skills to become world-class engineers. It's a blend of technical and soft skills training that is essential for professionals to thrive in any work environment, especially when working with a distributed team.",
+    longDescription:
+      "We provide prerequisite software engineering skills to become world-class engineers. It's a blend of technical and soft skills training that is essential for professionals to thrive in any work environment, especially when working with a distributed team.",
+  },
+  {
+    id: 4,
     name: "Mobile Applications",
     iconPath: "https://img.icons8.com/clouds/100/000000/mobile-shop-addres.png",
     link: "/services",
@@ -26,16 +41,6 @@ export default [
       "We develop visually pleasing apps that are optimized to swiftly grow your global business revenue.",
     longDescription:
       "A mobile application, most commonly referred to as an app, is a type of application software designed to run on a mobile device, such as a smartphone or tablet computer. Mobile applications frequently serve to provide users with similar services to those accessed on PCs",
-  },
-  {
-    id: 4,
-    name: "Computer skills training & internship",
-    iconPath: "https://img.icons8.com/bubbles/100/000000/training.png",
-    link: "/services",
-    description:
-      "We train you to become a professional software engineer and learn basic computer skills",
-    longDescription:
-      "We train you to become a professional software engineer and learn basic computer skills",
   },
   {
     id: 5,

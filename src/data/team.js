@@ -1,7 +1,7 @@
 export const managementTeam = [
   {
     id: "1",
-    name: "Nkurikiyintwali Donat",
+    name: "Donat NKURIYINTWALI",
     position: "Chairman",
     description:
       "Donat NKURIYINTWALI holds a Master's degree in Economics from the University of Rwanda, he has the professional certificates in Insurance, Customs and Freight Forwarding. He works in Sanlam Insurance company.  He is a Board of Director's chairman of Muhabura Tech Group.",
@@ -11,8 +11,8 @@ export const managementTeam = [
     id: "2",
     name: "Minega Shyaka Patrick",
     position: "Managing Director",
-    description: `As Managing Director, he oversees the strategic direction of MTG and key initiatives include enhancing and expanding MTG's technology footprint and expertise, project management, and providing a plan to achieve the company vision for the future. He is a Software Engineer by profession and has a Bachelor's of Information systems degree from Makerere University `,
-    image: "/minega.jpg",
+    description: `As Managing Director, He oversees the strategic direction of Muhabura Tech Group and key initiatives include enhancing and expanding Muhabura Tech Group's technology footprint and expertise, project management, and providing a plan to achieve the company vision for the future. He is a Software Engineer by profession and has a Bachelor's of Information systems degree from Makerere University `,
+    image: "/team/minega.JPG",
   },
 ];
 
@@ -22,8 +22,8 @@ export const technicalTeam = [
     name: "Jean Salvi",
     position: "Full stack Engineer & Data scientist",
     description:
-      "His set of responsibilities include overseeing the infrastructure of technical operations, managing a team of IT employees, tracking technology in order to achieve business goals, eliminating security risks, increasing user satisfaction, and maintaining operations and systems",
-    image: "/team/salvi.jpeg",
+      "His primary responsibilities include designing user interactions on websites, developing servers and databases for website functionality and coding for mobile platforms.",
+    image: "/team/salvi.JPG",
   },
   {
     id: "1",
@@ -62,7 +62,7 @@ export const technicalTeam = [
     name: "Gakwaya Raymond",
     position: "Back-end Engineer",
     description:
-      "Raymond Gakwaya, an experienced Software Engineer with verifiable success leading teams in delivering appropriate technology solutions for desktop and mobile products.  Comprehensive knowledge of platform development, enterprise architecture, agile methodologies, cloud services, and web-based applications, skilled in Javascript(Node, React, PostgreSQL, Express), GraphQL, and Python/Django.  Innovative change agent with a unique mix of high-level technology direction and deep technical expertise.",
+      "He has a comprehensive knowledge of platform development, enterprise architecture, agile methodologies, cloud services, and web-based applications, skilled in Javascript(Node, React, PostgreSQL, Express), GraphQL, and Python/Django.  Innovative change agent with a unique mix of high-level technology direction and deep technical expertise.",
     image: "/team/raymond.jpeg",
   },
 ];

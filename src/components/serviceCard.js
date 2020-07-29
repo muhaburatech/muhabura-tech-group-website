@@ -8,7 +8,7 @@ const ServiceCard = ({ service }) => {
   let location = useLocation();
 
   return (
-    <div className="max-w-sm py-4 px-8 bg-white shadow-md rounded-lg mb-3 my-20 m-2 md:m-10 hover:shadow-xl">
+    <div className=" max-w-lg py-4 px-8 bg-white shadow-md rounded-lg mb-3 my-20 m-2 md:m-10 hover:shadow-xl">
       <div className="flex justify-center -mt-16">
         <img
           className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
