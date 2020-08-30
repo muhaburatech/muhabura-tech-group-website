@@ -19,6 +19,15 @@ export default [
   },
   {
     id: 3,
+    name: "World business logistics",
+    image: "/projects/wbl.png",
+    description:
+      "World Business Logistics Ltd is committed to provide a stress-free Clearing and Forwarding experience by providing superior services that will cater to our customers’ individual needs…always conveying the ‘Constant And Never Ending Improvement’ spirit mixed with passion for excellence and exceeds client expectations.",
+    stack: [""],
+    demoLink: "https://worldbusinesslogisticsltd.com",
+  },
+  {
+    id: 4,
     name: "4 blooms restaurant",
     image: "/projects/4blooms.png",
     description:
