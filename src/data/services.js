@@ -24,7 +24,7 @@ It increases customers’ engagement. As with any other business, you probably w
 
   {
     id: 3,
-    name: "Computer skills training & internship",
+    name: "Software Engineering Training & Internship",
     iconPath: "https://img.icons8.com/bubbles/100/000000/training.png",
     link: "/services",
     description:
