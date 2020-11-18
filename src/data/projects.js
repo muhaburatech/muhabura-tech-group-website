@@ -1,14 +1,5 @@
 export default [
   {
-    id: 1,
-    name: "HealthEducat",
-    image: "/projects/healtheducat.png",
-    description:
-      "HealthEdu is a Company created with the support of Health Volunteers Overseas (HVO) – United States of America; it was initiated by Jean Damascene Bigirimana, who developed a web-based platform for online trainings in 2016. With the support of Student Alumni of Misercodia University (USA), Jean Damascene Bigirimana was able to establish the online training.",
-    stack: [""],
-    demoLink: "http://healtheducat.com/lean/",
-  },
-  {
     id: 2,
     name: "Pine Rwanda",
     image: "/projects/pinerwanda.png",
